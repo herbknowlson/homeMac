@@ -115,7 +115,7 @@ function validatePass(){
         return true;
 	    document.getElementById('password').value == '*****'
     }else{
-        alert('wrong password!!');
+        alert('access denied');
         return false;
     }
 }
