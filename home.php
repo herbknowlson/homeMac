@@ -36,7 +36,7 @@ function changeIt()
 {
   $msg = "- home.php - changeIt()";
   console.log($msg);
-  var i = "../../home/img/cs.jpg";
+  var i = "../../homeMac/img/cs.jpg";
   bg = "url(" + i + ") no-repeat";
   document.getElementById("heading").innerHTML=bg;
   document.body.style.background = bg;
