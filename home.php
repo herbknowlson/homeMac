@@ -55,9 +55,10 @@ function changeIt()
     	header("Location: index2.php?selection=1");
 	} elseif ($_GET["index"] == "4") {
         //date_default_timezone_set('America/Chicago');
-        //error_log(date('Y-m-d H:i:s') . " " . "- home.php - doSelect - index = 4" .  "\n", 3, "E:/xampp/php/logs/execution.log");
-		exec("E:/xampp/htdocs/home/openLog.bat");
-		header("Location: home.php?selection=false");
+            //error_log(date('Y-m-d H:i:s') . " " . "- home.php - doSelect - index = 4" .  "\n", 3, "Applications/XAMPP/xamppfiles/logs/execution.log");
+	    error_log(date('Y-m-d H:i:s') . " " . "- home.php - doSelect - index = 4" .  "\n", 3, "Applications/XAMPP/logs/execution.log");
+	    exec("open -a '/Applications/Komodo Edit.app'  /Applications/XAMPP/xamppfiles/logs/execution.log");
+	    header("Location: home.php?selection=false");
   	} elseif ($_GET["index"] == "5") {
         date_default_timezone_set('America/Chicago');
         error_log(date('Y-m-d H:i:s') . " " . "- home.php - doSelect - index = 5" .  "\n", 3, "E:/xampp/php/logs/execution.log");
